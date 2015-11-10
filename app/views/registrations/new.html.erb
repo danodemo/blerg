@@ -14,18 +14,23 @@
     <% end %>
 
     <div class="user-field">
-        <%= label_tag "Full Name: " %>
-        <%= text_field_tag :name %>
+        <%= f.label "Full Name: " %>
+        <%= f.text_field :fullname %>
     </div>
 
     <div class="user-field">
-        <%= label_tag "Email: " %>
-        <%= text_field_tag :email %>
+        <%= f.label "Email: " %>
+        <%= f.text_field :email %>
     </div>
 
     <div class="user-field">
-        <%= label_tag "Password " %>
-        <%= password_field_tag :password %>
+        <%= f.label "Password " %>
+        <%= f.password_field :password %>
+    </div>
+
+    <div class="user-field">
+        <%= f.label "Profile Picture" %>
+        <%= f.file_field :avatar %>
     </div>
 
     <%= submit_tag "Sign Up" %>
